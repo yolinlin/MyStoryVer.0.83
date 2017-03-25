@@ -50,6 +50,7 @@ public class ReactorScriptManager extends AbstractScriptManager {
 
     public void act(MapleClient c, MapleReactor reactor) {
         try {
+            c.getPlayer().dropMessage("正在与" + reactor.getId() + "进行接触。");
             ReactorActionManager rm = new ReactorActionManager(c, reactor);
             Invocable iv = getInvocable("reactor/" + reactor.getId() + ".js", c);
             if (iv == null) {

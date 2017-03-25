@@ -56,6 +56,7 @@ public class NPCScriptManager extends AbstractScriptManager {
 
     public void start(MapleClient c, int npc, String fileName, MapleCharacter chr) {
         try {
+            c.getPlayer().dropMessage("正在进行和" + npc + "的对话。");
             NPCConversationManager cm = new NPCConversationManager(c, npc, fileName);
             if (cms.containsKey(c)) {
                 dispose(c);
@@ -73,7 +74,8 @@ public class NPCScriptManager extends AbstractScriptManager {
                     FilePrinter.printError(FilePrinter.NPC_UNCODED, "NPC " + MapleLifeFactory.getNPC(npc).getName() + "(" + npc + ") is not coded.\r\n");
                 }
                 if (iv == null || NPCScriptManager.getInstance() == null) {
-                    dispose(c);
+                    cm.sendOk("在下与你无话可说。\r\n记住，我是: #r" + npc + "#k.");
+                    cm.dispose();
                     return;
                 }
                 engine.put("cm", cm);

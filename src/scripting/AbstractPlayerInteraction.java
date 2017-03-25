@@ -485,6 +485,10 @@ public class AbstractPlayerInteraction {
 	public void sendClock(MapleClient d, int time) {
 		d.announce(MaplePacketCreator.getClock((int) (time - System.currentTimeMillis()) / 1000));
 	}
+        
+	public void setClock(MapleClient d, int time) {
+		d.announce(MaplePacketCreator.getClock(time));
+	}        
 
 	public void useItem(int id) {
 		MapleItemInformationProvider.getInstance().getItemEffect(id).applyTo(c.getPlayer());

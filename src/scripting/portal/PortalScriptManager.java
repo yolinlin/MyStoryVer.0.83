@@ -57,6 +57,7 @@ public class PortalScriptManager {
             return scripts.get(scriptName);
         }
         File scriptFile = new File("scripts/portal/" + scriptName + ".js");
+        System.err.println("正在使用" + scriptName + "进行传送。");
         if (!scriptFile.exists()) {
             scripts.put(scriptName, null);
             return null;

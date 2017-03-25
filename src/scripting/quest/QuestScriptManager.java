@@ -52,7 +52,7 @@ public class QuestScriptManager extends AbstractScriptManager {
 			dispose(c);
 			return;
 		}
-		try {
+		try {     
 			QuestActionManager qm = new QuestActionManager(c, questid, npc, true);
 			if (qms.containsKey(c)) {
 				return;
@@ -70,7 +70,8 @@ public class QuestScriptManager extends AbstractScriptManager {
 				engine.put("qm", qm);
 				scripts.put(c, iv);
 				c.setClickedNPC();
-				iv.invokeFunction("start", (byte) 1, (byte) 0, 0);
+                                c.getPlayer().dropMessage("正在进行" + questid + "任务。");
+				iv.invokeFunction("start", (byte) 1, (byte) 0, 0);       
 			}
 		} catch (final UndeclaredThrowableException ute) {
 			FilePrinter.printError(FilePrinter.QUEST + questid + ".txt", ute);

@@ -272,6 +272,7 @@ public class MapleCharacter extends AbstractAnimatedMapleMapObject {
     private MCField MCPQField;
     private int availableCP = 0;
     private int totalCP = 0;
+    private long travelTime = 0; 
 
     private MapleCharacter() {
         setStance(0);
@@ -5281,5 +5282,13 @@ public class MapleCharacter extends AbstractAnimatedMapleMapObject {
 
     public void loseCP(int cp) {
         this.availableCP -= cp;
+    }
+
+    public void setTravelTime(int duration) {
+        travelTime = System.currentTimeMillis() + duration * 1000;
+    }
+
+    public boolean isRideFinished() {
+        return travelTime < System.currentTimeMillis();
     }
 }

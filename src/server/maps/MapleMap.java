@@ -1305,28 +1305,6 @@ public class MapleMap {
                     }
                 }
             }, 5 * 60 * 1000);
-        } else if (mapid == 200090060) { // To Rien
-            chr.announce(MaplePacketCreator.getClock(60));
-            TimerManager.getInstance().schedule(new Runnable() {
-
-                @Override
-                public void run() {
-                    if (chr.getMapId() == 200090060) {
-                        chr.changeMap(140020300);
-                    }
-                }
-            }, 60 * 1000);
-        } else if (mapid == 200090070) { // To Lith Harbor
-            chr.announce(MaplePacketCreator.getClock(60));
-            TimerManager.getInstance().schedule(new Runnable() {
-
-                @Override
-                public void run() {
-                    if (chr.getMapId() == 200090070) {
-                        chr.changeMap(104000000, 3);
-                    }
-                }
-            }, 60 * 1000);
         } else if (mapid == 200090030) { // To Ereve (SkyFerry)
             chr.getClient().announce(MaplePacketCreator.getClock(60));
             TimerManager.getInstance().schedule(new Runnable() {
