@@ -70,7 +70,7 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
 	private int npc;
 	private String scriptName;
 	private String getText;
-
+        
 	public NPCConversationManager(MapleClient c, int npc, String scriptName) {
 		super(c);
 		this.npc = npc;
@@ -466,6 +466,14 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
 		return c.getChannelServer().getEvent();
 	}
 
+	public int getChannel() {
+		return c.getChannel();
+	}
+        
+        public MapleCharacter getChar() {
+		return c.getPlayer();
+	}
+        
 	public void divideTeams() {
 		if (getEvent() != null) {
 			getPlayer().setTeam(getEvent().getLimit() % 2); //muhaha :D
@@ -515,5 +523,5 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
 		py.warp(mapid);
 		dispose();
 		return true;
-	}
+	}        
 }
