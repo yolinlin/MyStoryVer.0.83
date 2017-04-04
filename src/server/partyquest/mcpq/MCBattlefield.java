@@ -47,7 +47,7 @@ public class MCBattlefield {
 
     private List<SpawnPoint> originalSpawns = new ArrayList<>();
     private List<SpawnPoint> addedSpawns = new ArrayList<>();
-
+    
     public MCBattlefield(MapleMap battleInstance) {
         this.map = battleInstance;
         fetchCarnivalData();
@@ -428,7 +428,7 @@ public class MCBattlefield {
     private void applyGuardians(MapleMonster mob, List<MCGuardian> guardians) {
         for (MCGuardian g : guardians) {
             MobSkill sk = MobSkillFactory.getMobSkill(g.getMobSkillID(), g.getLevel());
-            sk.applyEffect(null, mob, true);
+            sk.applyEffect(null, mob, false);
         }
     }
 

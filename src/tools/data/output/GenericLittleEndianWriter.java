@@ -121,27 +121,22 @@ public class GenericLittleEndianWriter implements LittleEndianWriter {
     public void writeAsciiString(String s) {
         write(s.getBytes(ASCII));
     }
-
-    /**
-     * Writes a maple-convention ASCII string to the stream.
-     *
-     * @param s The ASCII string to use maple-convention to write.
-     */
+    
+    public void writeAsciiString(String s, int max) {
+        if (s.getBytes(ASCII).length > max) {
+            s = s.substring(0, max);
+        }
+        write(s.getBytes(ASCII));
+        for (int i = s.getBytes(ASCII).length; i < max; i++) {
+            write(0);
+        }
+    }
+    
     @Override
     public void writeMapleAsciiString(String s) {
-        writeShort((short)getlength(s));
+        writeShort((short) s.getBytes(ASCII).length);
         writeAsciiString(s);
-    }
-
-      public  int  getlength(String  str){  
-        int  i,t=0;  
-        byte[]  bt  =  str.getBytes();  
-        for  (i=1;i<=bt.length;i++){  
-            if  (bt[i-1]<0)  {t=t+2;i++;}  
-            else  t=t+1;  
-        }  
-        return  t;  
-    }    
+    } 
     
     /**
      * Writes a null-terminated ASCII string to the stream.

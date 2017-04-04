@@ -18,7 +18,7 @@ public class MCSkillFactory {
 
     private static Map<Integer, MCSkill> mcSkills = new HashMap<>();
     private static Map<Integer, MCGuardian> mcGuardians = new HashMap<>();
-    private static MapleDataProvider dataSource = MapleDataProviderFactory.getDataProvider(new File(System.getProperty("net.sf.odinms.wzpath") + "/Skill.wz"));
+    private static MapleDataProvider dataSource = MapleDataProviderFactory.getDataProvider(new File(System.getProperty("wzpath") + "/Skill.wz"));
     private static MapleData mcSkillRoot = dataSource.getData("MCSkill.img");
     private static MapleData mcGuardianRoot = dataSource.getData("MCGuardian.img");
     private static ReentrantReadWriteLock skillLock = new ReentrantReadWriteLock();

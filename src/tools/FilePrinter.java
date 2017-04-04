@@ -11,7 +11,7 @@ import java.util.Calendar;
 public class FilePrinter {
 
     public static final String 
-    		ACCOUNT_STUCK = "accountStuck.txt",
+    	    ACCOUNT_STUCK = "accountStuck.txt",
             EXCEPTION_CAUGHT = "exceptionCaught.txt",
             CLIENT_START = "clientStartError.txt",
             ADD_PLAYER = "addPlayer.txt",
@@ -39,8 +39,8 @@ public class FilePrinter {
             PACKET_LOGS = "packetlogs/",
             DELETED_CHARACTERS = "deletedchars/",
             FREDRICK = "fredrick/",
-    		NPC_UNCODED = "uncodedNPCs.txt",
-    		QUEST_UNCODED = "uncodedQuests.txt",
+    	    NPC_UNCODED = "uncodedNPCs.txt",
+            QUEST_UNCODED = "uncodedQuests.txt",
             SAVING_CHARACTER = "saveChar.txt";//more to come (maps)
     private static final SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
     private static final String FILE_PATH = "logs/" + sdf.format(Calendar.getInstance().getTime()) + "/";// + sdf.format(Calendar.getInstance().getTime()) + "/"

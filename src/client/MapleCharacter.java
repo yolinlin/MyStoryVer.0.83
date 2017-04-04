@@ -3861,10 +3861,10 @@ public class MapleCharacter extends AbstractAnimatedMapleMapObject {
                     ps.setInt(24, 0);
                 }
             }
-            if (party != null) {
+            if (party != null) { //组队下线不消失
                 ps.setInt(25, party.getId());
             } else {
-                ps.setInt(25, -1);
+                ps.setInt(25, 0);
             }
             ps.setInt(26, buddylist.getCapacity());
             if (messenger != null) {
