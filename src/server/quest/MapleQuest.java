@@ -222,6 +222,8 @@ public class MapleQuest {
 		    for (MapleQuestAction a : completeActs.values()) {
 		        a.run(c, selection);
 		    }
+            c.getClient().getSession().write(MaplePacketCreator.showSpecialEffect(9)); // Quest completion
+            c.getMap().broadcastMessage(c, MaplePacketCreator.showForeignEffect(c.getId(), 9), false);
 		}
     }
 

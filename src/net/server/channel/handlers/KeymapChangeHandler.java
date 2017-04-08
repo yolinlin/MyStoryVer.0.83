@@ -43,9 +43,9 @@ public final class KeymapChangeHandler extends AbstractMaplePacketHandler {
 					int key = slea.readInt();
 					int type = slea.readByte();
 					int action = slea.readInt();              
-					Skill skill = SkillFactory.getSkill(action);
+					Skill skill = SkillFactory.getSkill(action);                        
 					boolean isBanndedSkill = false;
-					if (skill != null) {
+					if (skill != null && type != 4 && type != 0) {
 						isBanndedSkill = GameConstants.bannedBindSkills(skill.getId());         
 						if (isBanndedSkill || (!c.getPlayer().isGM() && GameConstants.isGMSkills(skill.getId())) || (!GameConstants.isInJobTree(skill.getId(), c.getPlayer().getJob().getId()) && !c.getPlayer().isGM())) { //for those skills are are "technically" in the beginner tab, like bamboo rain in Dojo or skills you find in PYPQ
 							AutobanFactory.PACKET_EDIT.alert(c.getPlayer(), c.getPlayer().getName() + " tried to packet edit keymapping.");

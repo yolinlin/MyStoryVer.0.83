@@ -4,19 +4,19 @@ Navicat MySQL Data Transfer
 Source Server         : localhost_3306
 Source Server Version : 50628
 Source Host           : localhost:3306
-Source Database       : maple_maplelife
+Source Database       : asd
 
 Target Server Type    : MYSQL
 Target Server Version : 50628
 File Encoding         : 65001
 
-Date: 2017-03-07 18:37:31
+Date: 2017-04-07 23:02:24
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for accounts
+-- Table structure for `accounts`
 -- ----------------------------
 DROP TABLE IF EXISTS `accounts`;
 CREATE TABLE `accounts` (
@@ -67,7 +67,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for alliance
+-- Table structure for `alliance`
 -- ----------------------------
 DROP TABLE IF EXISTS `alliance`;
 CREATE TABLE `alliance` (
@@ -100,7 +100,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for area_info
+-- Table structure for `area_info`
 -- ----------------------------
 DROP TABLE IF EXISTS `area_info`;
 CREATE TABLE `area_info` (
@@ -123,7 +123,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for bbs_replies
+-- Table structure for `bbs_replies`
 -- ----------------------------
 DROP TABLE IF EXISTS `bbs_replies`;
 CREATE TABLE `bbs_replies` (
@@ -147,7 +147,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for bbs_threads
+-- Table structure for `bbs_threads`
 -- ----------------------------
 DROP TABLE IF EXISTS `bbs_threads`;
 CREATE TABLE `bbs_threads` (
@@ -175,7 +175,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for bit_votingrecords
+-- Table structure for `bit_votingrecords`
 -- ----------------------------
 DROP TABLE IF EXISTS `bit_votingrecords`;
 CREATE TABLE `bit_votingrecords` (
@@ -200,7 +200,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for buddies
+-- Table structure for `buddies`
 -- ----------------------------
 DROP TABLE IF EXISTS `buddies`;
 CREATE TABLE `buddies` (
@@ -224,7 +224,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for characters
+-- Table structure for `characters`
 -- ----------------------------
 DROP TABLE IF EXISTS `characters`;
 CREATE TABLE `characters` (
@@ -316,7 +316,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for cooldowns
+-- Table structure for `cooldowns`
 -- ----------------------------
 DROP TABLE IF EXISTS `cooldowns`;
 CREATE TABLE `cooldowns` (
@@ -340,7 +340,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for drop_data
+-- Table structure for `drop_data`
 -- ----------------------------
 DROP TABLE IF EXISTS `drop_data`;
 CREATE TABLE `drop_data` (
@@ -493,7 +493,7 @@ INSERT INTO `drop_data` VALUES ('12744', '9420549', '1002927', '1', '1', '0', '3
 COMMIT;
 
 -- ----------------------------
--- Table structure for drop_data_global
+-- Table structure for `drop_data_global`
 -- ----------------------------
 DROP TABLE IF EXISTS `drop_data_global`;
 CREATE TABLE `drop_data_global` (
@@ -523,7 +523,7 @@ INSERT INTO `drop_data_global` VALUES ('1', '1', '0', '4031865', '1', '1', '0', 
 COMMIT;
 
 -- ----------------------------
--- Table structure for dueyitems
+-- Table structure for `dueyitems`
 -- ----------------------------
 DROP TABLE IF EXISTS `dueyitems`;
 CREATE TABLE `dueyitems` (
@@ -566,7 +566,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for dueypackages
+-- Table structure for `dueypackages`
 -- ----------------------------
 DROP TABLE IF EXISTS `dueypackages`;
 CREATE TABLE `dueypackages` (
@@ -592,7 +592,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for eventstats
+-- Table structure for `eventstats`
 -- ----------------------------
 DROP TABLE IF EXISTS `eventstats`;
 CREATE TABLE `eventstats` (
@@ -613,7 +613,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for famelog
+-- Table structure for `famelog`
 -- ----------------------------
 DROP TABLE IF EXISTS `famelog`;
 CREATE TABLE `famelog` (
@@ -638,7 +638,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for family_character
+-- Table structure for `family_character`
 -- ----------------------------
 DROP TABLE IF EXISTS `family_character`;
 CREATE TABLE `family_character` (
@@ -665,7 +665,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for gifts
+-- Table structure for `gifts`
 -- ----------------------------
 DROP TABLE IF EXISTS `gifts`;
 CREATE TABLE `gifts` (
@@ -690,7 +690,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for gmlog
+-- Table structure for `gmlog`
 -- ----------------------------
 DROP TABLE IF EXISTS `gmlog`;
 CREATE TABLE `gmlog` (
@@ -713,7 +713,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for guilds
+-- Table structure for `guilds`
 -- ----------------------------
 DROP TABLE IF EXISTS `guilds`;
 CREATE TABLE `guilds` (
@@ -722,7 +722,7 @@ CREATE TABLE `guilds` (
 `GP`  int(10) UNSIGNED NOT NULL DEFAULT 0 ,
 `logo`  int(10) UNSIGNED NULL DEFAULT NULL ,
 `logoColor`  smallint(5) UNSIGNED NOT NULL DEFAULT 0 ,
-`name`  varchar(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL ,
+`name`  varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
 `rank1title`  varchar(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'Master' ,
 `rank2title`  varchar(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'Jr. Master' ,
 `rank3title`  varchar(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'Member' ,
@@ -749,7 +749,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for hiredmerchant
+-- Table structure for `hiredmerchant`
 -- ----------------------------
 DROP TABLE IF EXISTS `hiredmerchant`;
 CREATE TABLE `hiredmerchant` (
@@ -791,7 +791,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for htsquads
+-- Table structure for `htsquads`
 -- ----------------------------
 DROP TABLE IF EXISTS `htsquads`;
 CREATE TABLE `htsquads` (
@@ -815,7 +815,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for hwidbans
+-- Table structure for `hwidbans`
 -- ----------------------------
 DROP TABLE IF EXISTS `hwidbans`;
 CREATE TABLE `hwidbans` (
@@ -837,7 +837,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for inventoryequipment
+-- Table structure for `inventoryequipment`
 -- ----------------------------
 DROP TABLE IF EXISTS `inventoryequipment`;
 CREATE TABLE `inventoryequipment` (
@@ -881,7 +881,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for inventoryitems
+-- Table structure for `inventoryitems`
 -- ----------------------------
 DROP TABLE IF EXISTS `inventoryitems`;
 CREATE TABLE `inventoryitems` (
@@ -914,7 +914,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for ipbans
+-- Table structure for `ipbans`
 -- ----------------------------
 DROP TABLE IF EXISTS `ipbans`;
 CREATE TABLE `ipbans` (
@@ -935,7 +935,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for iplog
+-- Table structure for `iplog`
 -- ----------------------------
 DROP TABLE IF EXISTS `iplog`;
 CREATE TABLE `iplog` (
@@ -960,7 +960,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for keymap
+-- Table structure for `keymap`
 -- ----------------------------
 DROP TABLE IF EXISTS `keymap`;
 CREATE TABLE `keymap` (
@@ -984,7 +984,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for macbans
+-- Table structure for `macbans`
 -- ----------------------------
 DROP TABLE IF EXISTS `macbans`;
 CREATE TABLE `macbans` (
@@ -1006,7 +1006,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for macfilters
+-- Table structure for `macfilters`
 -- ----------------------------
 DROP TABLE IF EXISTS `macfilters`;
 CREATE TABLE `macfilters` (
@@ -1027,7 +1027,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for makercreatedata
+-- Table structure for `makercreatedata`
 -- ----------------------------
 DROP TABLE IF EXISTS `makercreatedata`;
 CREATE TABLE `makercreatedata` (
@@ -1064,7 +1064,7 @@ INSERT INTO `makercreatedata` VALUES ('16', '1072321', '105', '3', '180000', '0'
 COMMIT;
 
 -- ----------------------------
--- Table structure for makerrecipedata
+-- Table structure for `makerrecipedata`
 -- ----------------------------
 DROP TABLE IF EXISTS `makerrecipedata`;
 CREATE TABLE `makerrecipedata` (
@@ -1105,7 +1105,7 @@ INSERT INTO `makerrecipedata` VALUES ('4250901', '4250900', '10'), ('4250902', '
 COMMIT;
 
 -- ----------------------------
--- Table structure for makerrewarddata
+-- Table structure for `makerrewarddata`
 -- ----------------------------
 DROP TABLE IF EXISTS `makerrewarddata`;
 CREATE TABLE `makerrewarddata` (
@@ -1128,7 +1128,7 @@ INSERT INTO `makerrewarddata` VALUES ('4250000', '4250000', '1', '14'), ('425000
 COMMIT;
 
 -- ----------------------------
--- Table structure for marriages
+-- Table structure for `marriages`
 -- ----------------------------
 DROP TABLE IF EXISTS `marriages`;
 CREATE TABLE `marriages` (
@@ -1150,7 +1150,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for medalmaps
+-- Table structure for `medalmaps`
 -- ----------------------------
 DROP TABLE IF EXISTS `medalmaps`;
 CREATE TABLE `medalmaps` (
@@ -1173,7 +1173,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for monsterbook
+-- Table structure for `monsterbook`
 -- ----------------------------
 DROP TABLE IF EXISTS `monsterbook`;
 CREATE TABLE `monsterbook` (
@@ -1194,7 +1194,7 @@ INSERT INTO `monsterbook` VALUES ('30000', '2380011', '1');
 COMMIT;
 
 -- ----------------------------
--- Table structure for monstercarddata
+-- Table structure for `monstercarddata`
 -- ----------------------------
 DROP TABLE IF EXISTS `monstercarddata`;
 CREATE TABLE `monstercarddata` (
@@ -1221,7 +1221,7 @@ INSERT INTO `monstercarddata` VALUES ('301', '2382094', '3300002'), ('302', '238
 COMMIT;
 
 -- ----------------------------
--- Table structure for mts_cart
+-- Table structure for `mts_cart`
 -- ----------------------------
 DROP TABLE IF EXISTS `mts_cart`;
 CREATE TABLE `mts_cart` (
@@ -1243,7 +1243,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for mts_items
+-- Table structure for `mts_items`
 -- ----------------------------
 DROP TABLE IF EXISTS `mts_items`;
 CREATE TABLE `mts_items` (
@@ -1297,7 +1297,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for notes
+-- Table structure for `notes`
 -- ----------------------------
 DROP TABLE IF EXISTS `notes`;
 CREATE TABLE `notes` (
@@ -1323,7 +1323,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for nxcode
+-- Table structure for `nxcode`
 -- ----------------------------
 DROP TABLE IF EXISTS `nxcode`;
 CREATE TABLE `nxcode` (
@@ -1346,12 +1346,12 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for pets
+-- Table structure for `pets`
 -- ----------------------------
 DROP TABLE IF EXISTS `pets`;
 CREATE TABLE `pets` (
 `petid`  int(10) UNSIGNED NOT NULL AUTO_INCREMENT ,
-`name`  varchar(13) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL ,
+`name`  varchar(13) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
 `level`  int(10) UNSIGNED NOT NULL ,
 `closeness`  int(10) UNSIGNED NOT NULL ,
 `fullness`  int(10) UNSIGNED NOT NULL ,
@@ -1371,7 +1371,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for playernpcs
+-- Table structure for `playernpcs`
 -- ----------------------------
 DROP TABLE IF EXISTS `playernpcs`;
 CREATE TABLE `playernpcs` (
@@ -1404,7 +1404,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for playernpcs_equip
+-- Table structure for `playernpcs_equip`
 -- ----------------------------
 DROP TABLE IF EXISTS `playernpcs_equip`;
 CREATE TABLE `playernpcs_equip` (
@@ -1428,7 +1428,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for questactions
+-- Table structure for `questactions`
 -- ----------------------------
 DROP TABLE IF EXISTS `questactions`;
 CREATE TABLE `questactions` (
@@ -1451,7 +1451,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for questprogress
+-- Table structure for `questprogress`
 -- ----------------------------
 DROP TABLE IF EXISTS `questprogress`;
 CREATE TABLE `questprogress` (
@@ -1474,7 +1474,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for questrequirements
+-- Table structure for `questrequirements`
 -- ----------------------------
 DROP TABLE IF EXISTS `questrequirements`;
 CREATE TABLE `questrequirements` (
@@ -1497,7 +1497,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for queststatus
+-- Table structure for `queststatus`
 -- ----------------------------
 DROP TABLE IF EXISTS `queststatus`;
 CREATE TABLE `queststatus` (
@@ -1523,7 +1523,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for reactordrops
+-- Table structure for `reactordrops`
 -- ----------------------------
 DROP TABLE IF EXISTS `reactordrops`;
 CREATE TABLE `reactordrops` (
@@ -1557,7 +1557,7 @@ INSERT INTO `reactordrops` VALUES ('807', '100011', '4022023', '1', '-1'), ('808
 COMMIT;
 
 -- ----------------------------
--- Table structure for reports
+-- Table structure for `reports`
 -- ----------------------------
 DROP TABLE IF EXISTS `reports`;
 CREATE TABLE `reports` (
@@ -1583,7 +1583,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for responses
+-- Table structure for `responses`
 -- ----------------------------
 DROP TABLE IF EXISTS `responses`;
 CREATE TABLE `responses` (
@@ -1605,7 +1605,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for rings
+-- Table structure for `rings`
 -- ----------------------------
 DROP TABLE IF EXISTS `rings`;
 CREATE TABLE `rings` (
@@ -1629,7 +1629,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for savedlocations
+-- Table structure for `savedlocations`
 -- ----------------------------
 DROP TABLE IF EXISTS `savedlocations`;
 CREATE TABLE `savedlocations` (
@@ -1653,7 +1653,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for server_queue
+-- Table structure for `server_queue`
 -- ----------------------------
 DROP TABLE IF EXISTS `server_queue`;
 CREATE TABLE `server_queue` (
@@ -1679,7 +1679,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for shopitems
+-- Table structure for `shopitems`
 -- ----------------------------
 DROP TABLE IF EXISTS `shopitems`;
 CREATE TABLE `shopitems` (
@@ -1739,7 +1739,7 @@ INSERT INTO `shopitems` VALUES ('20037', '1338', '2022191', '1000', '0', '168'),
 COMMIT;
 
 -- ----------------------------
--- Table structure for shops
+-- Table structure for `shops`
 -- ----------------------------
 DROP TABLE IF EXISTS `shops`;
 CREATE TABLE `shops` (
@@ -1761,7 +1761,7 @@ INSERT INTO `shops` VALUES ('11000', '11000'), ('11100', '11100'), ('21000', '21
 COMMIT;
 
 -- ----------------------------
--- Table structure for skillmacros
+-- Table structure for `skillmacros`
 -- ----------------------------
 DROP TABLE IF EXISTS `skillmacros`;
 CREATE TABLE `skillmacros` (
@@ -1788,7 +1788,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for skills
+-- Table structure for `skills`
 -- ----------------------------
 DROP TABLE IF EXISTS `skills`;
 CREATE TABLE `skills` (
@@ -1813,7 +1813,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for specialcashitems
+-- Table structure for `specialcashitems`
 -- ----------------------------
 DROP TABLE IF EXISTS `specialcashitems`;
 CREATE TABLE `specialcashitems` (
@@ -1836,7 +1836,7 @@ INSERT INTO `specialcashitems` VALUES ('1', '10000617', '1024', '1');
 COMMIT;
 
 -- ----------------------------
--- Table structure for storages
+-- Table structure for `storages`
 -- ----------------------------
 DROP TABLE IF EXISTS `storages`;
 CREATE TABLE `storages` (
@@ -1860,7 +1860,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for trocklocations
+-- Table structure for `trocklocations`
 -- ----------------------------
 DROP TABLE IF EXISTS `trocklocations`;
 CREATE TABLE `trocklocations` (
@@ -1883,7 +1883,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for wishlists
+-- Table structure for `wishlists`
 -- ----------------------------
 DROP TABLE IF EXISTS `wishlists`;
 CREATE TABLE `wishlists` (
@@ -1905,7 +1905,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for zaksquads
+-- Table structure for `zaksquads`
 -- ----------------------------
 DROP TABLE IF EXISTS `zaksquads`;
 CREATE TABLE `zaksquads` (
@@ -1929,271 +1929,271 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Auto increment value for accounts
+-- Auto increment value for `accounts`
 -- ----------------------------
 ALTER TABLE `accounts` AUTO_INCREMENT=2;
 
 -- ----------------------------
--- Auto increment value for alliance
+-- Auto increment value for `alliance`
 -- ----------------------------
 ALTER TABLE `alliance` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for area_info
+-- Auto increment value for `area_info`
 -- ----------------------------
 ALTER TABLE `area_info` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for bbs_replies
+-- Auto increment value for `bbs_replies`
 -- ----------------------------
 ALTER TABLE `bbs_replies` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for bbs_threads
+-- Auto increment value for `bbs_threads`
 -- ----------------------------
 ALTER TABLE `bbs_threads` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for bit_votingrecords
+-- Auto increment value for `bit_votingrecords`
 -- ----------------------------
 ALTER TABLE `bit_votingrecords` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for buddies
+-- Auto increment value for `buddies`
 -- ----------------------------
 ALTER TABLE `buddies` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for characters
+-- Auto increment value for `characters`
 -- ----------------------------
 ALTER TABLE `characters` AUTO_INCREMENT=30000;
 
 -- ----------------------------
--- Auto increment value for cooldowns
+-- Auto increment value for `cooldowns`
 -- ----------------------------
 ALTER TABLE `cooldowns` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for drop_data
+-- Auto increment value for `drop_data`
 -- ----------------------------
 ALTER TABLE `drop_data` AUTO_INCREMENT=12801;
 
 -- ----------------------------
--- Auto increment value for drop_data_global
+-- Auto increment value for `drop_data_global`
 -- ----------------------------
 ALTER TABLE `drop_data_global` AUTO_INCREMENT=5;
 
 -- ----------------------------
--- Auto increment value for dueyitems
+-- Auto increment value for `dueyitems`
 -- ----------------------------
 ALTER TABLE `dueyitems` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for dueypackages
+-- Auto increment value for `dueypackages`
 -- ----------------------------
 ALTER TABLE `dueypackages` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for famelog
+-- Auto increment value for `famelog`
 -- ----------------------------
 ALTER TABLE `famelog` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for gifts
+-- Auto increment value for `gifts`
 -- ----------------------------
 ALTER TABLE `gifts` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for gmlog
+-- Auto increment value for `gmlog`
 -- ----------------------------
 ALTER TABLE `gmlog` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for guilds
+-- Auto increment value for `guilds`
 -- ----------------------------
 ALTER TABLE `guilds` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for hiredmerchant
+-- Auto increment value for `hiredmerchant`
 -- ----------------------------
 ALTER TABLE `hiredmerchant` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for htsquads
+-- Auto increment value for `htsquads`
 -- ----------------------------
 ALTER TABLE `htsquads` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for hwidbans
+-- Auto increment value for `hwidbans`
 -- ----------------------------
 ALTER TABLE `hwidbans` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for inventoryequipment
+-- Auto increment value for `inventoryequipment`
 -- ----------------------------
 ALTER TABLE `inventoryequipment` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for inventoryitems
+-- Auto increment value for `inventoryitems`
 -- ----------------------------
 ALTER TABLE `inventoryitems` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for ipbans
+-- Auto increment value for `ipbans`
 -- ----------------------------
 ALTER TABLE `ipbans` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for iplog
+-- Auto increment value for `iplog`
 -- ----------------------------
 ALTER TABLE `iplog` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for keymap
+-- Auto increment value for `keymap`
 -- ----------------------------
 ALTER TABLE `keymap` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for macbans
+-- Auto increment value for `macbans`
 -- ----------------------------
 ALTER TABLE `macbans` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for macfilters
+-- Auto increment value for `macfilters`
 -- ----------------------------
 ALTER TABLE `macfilters` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for marriages
+-- Auto increment value for `marriages`
 -- ----------------------------
 ALTER TABLE `marriages` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for medalmaps
+-- Auto increment value for `medalmaps`
 -- ----------------------------
 ALTER TABLE `medalmaps` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for monstercarddata
+-- Auto increment value for `monstercarddata`
 -- ----------------------------
 ALTER TABLE `monstercarddata` AUTO_INCREMENT=309;
 
 -- ----------------------------
--- Auto increment value for mts_cart
+-- Auto increment value for `mts_cart`
 -- ----------------------------
 ALTER TABLE `mts_cart` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for mts_items
+-- Auto increment value for `mts_items`
 -- ----------------------------
 ALTER TABLE `mts_items` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for notes
+-- Auto increment value for `notes`
 -- ----------------------------
 ALTER TABLE `notes` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for pets
+-- Auto increment value for `pets`
 -- ----------------------------
 ALTER TABLE `pets` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for playernpcs
+-- Auto increment value for `playernpcs`
 -- ----------------------------
 ALTER TABLE `playernpcs` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for playernpcs_equip
+-- Auto increment value for `playernpcs_equip`
 -- ----------------------------
 ALTER TABLE `playernpcs_equip` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for questactions
+-- Auto increment value for `questactions`
 -- ----------------------------
 ALTER TABLE `questactions` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for questprogress
+-- Auto increment value for `questprogress`
 -- ----------------------------
 ALTER TABLE `questprogress` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for questrequirements
+-- Auto increment value for `questrequirements`
 -- ----------------------------
 ALTER TABLE `questrequirements` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for queststatus
+-- Auto increment value for `queststatus`
 -- ----------------------------
 ALTER TABLE `queststatus` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for reactordrops
+-- Auto increment value for `reactordrops`
 -- ----------------------------
 ALTER TABLE `reactordrops` AUTO_INCREMENT=841;
 
 -- ----------------------------
--- Auto increment value for reports
+-- Auto increment value for `reports`
 -- ----------------------------
 ALTER TABLE `reports` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for responses
+-- Auto increment value for `responses`
 -- ----------------------------
 ALTER TABLE `responses` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for rings
+-- Auto increment value for `rings`
 -- ----------------------------
 ALTER TABLE `rings` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for savedlocations
+-- Auto increment value for `savedlocations`
 -- ----------------------------
 ALTER TABLE `savedlocations` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for server_queue
+-- Auto increment value for `server_queue`
 -- ----------------------------
 ALTER TABLE `server_queue` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for shopitems
+-- Auto increment value for `shopitems`
 -- ----------------------------
 ALTER TABLE `shopitems` AUTO_INCREMENT=20047;
 
 -- ----------------------------
--- Auto increment value for shops
+-- Auto increment value for `shops`
 -- ----------------------------
 ALTER TABLE `shops` AUTO_INCREMENT=10000000;
 
 -- ----------------------------
--- Auto increment value for skillmacros
+-- Auto increment value for `skillmacros`
 -- ----------------------------
 ALTER TABLE `skillmacros` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for skills
+-- Auto increment value for `skills`
 -- ----------------------------
 ALTER TABLE `skills` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for storages
+-- Auto increment value for `storages`
 -- ----------------------------
 ALTER TABLE `storages` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for trocklocations
+-- Auto increment value for `trocklocations`
 -- ----------------------------
 ALTER TABLE `trocklocations` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for wishlists
+-- Auto increment value for `wishlists`
 -- ----------------------------
 ALTER TABLE `wishlists` AUTO_INCREMENT=1;
 
 -- ----------------------------
--- Auto increment value for zaksquads
+-- Auto increment value for `zaksquads`
 -- ----------------------------
 ALTER TABLE `zaksquads` AUTO_INCREMENT=1;

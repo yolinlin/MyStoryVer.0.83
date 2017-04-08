@@ -30,7 +30,7 @@ function action(mode, type, selection) {
 
     if (status == 0) {
         if (cm.getParty() == null) {
-            cm.sendOk("You are not in a party.");
+            cm.sendOk("你没有组队。");
             cm.dispose();
             return;
         } else if (!cm.isLeader()) {
